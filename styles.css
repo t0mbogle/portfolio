@@ -1,0 +1,61 @@
+p {
+    position: relative;
+ }
+ /* the above code is to do with positioning, and allows us to use the z-index property below, we will get to positioning a bit later on */  
+ 
+ p::after {
+    content: "";
+    background-color: palegoldenrod;
+    height: 20px;
+    width: 100%;
+    right: 20px;
+    position: absolute;
+    z-index: -1;
+ }
+
+h1 { color: red; }
+
+.student { font-size: 20px; }
+
+.pcPicture {
+    height: 500px;
+    width: 750px;
+}
+
+.poolPicture {
+    height: 600px;
+    width: 850px;
+}
+
+#about-me h3 {
+    background-color: coral;
+    text-align: center;
+    padding: 5px;
+}
+
+#about-me > p { color: teal; }
+
+#about-me > div > p { color: indigo; }
+
+#box:checked { box-shadow: 0 0 0 3px green; }
+
+#box:checked + label { color: green; }
+
+#about-me > h3:hover {
+    color: white;
+    background-color: teal;
+    text-align: center;
+    font-size: 23px;
+}
+
+#socials button:hover {
+    box-shadow: 2px 4px;    
+}
+
+.contact:visited {
+    color: blue;
+}
+
+.projects:active {
+    color: crimson;
+}
