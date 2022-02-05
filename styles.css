@@ -1,5 +1,17 @@
 * {
-    font-family: 'Cutive Mono', monospace;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Experimenting with navbar links */
+.navbar > a { 
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 5px 0px 5px;
+    color: #242038;
+}
+
+header {
+    background-color: #D8D8F6;
 }
 
 h1 { 
@@ -11,82 +23,100 @@ h3 {
     text-decoration: underline;
 }
 
-p { position: relative; }
- /* the above code is to do with positioning, and allows us to use the z-index property below, we will get to positioning a bit later on */  
-  p::after {
-    content: "";
-    background-color: palegoldenrod;
-    height: 20px;
-    width: 100%;
-    right: 20px;
-    position: absolute;
-    z-index: -1;
+
+/* Experimenting with paragraph font styling */
+#about-me p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 
+
+/* Three main boxes on homepage */
 #about-me {
     border-style: solid;
-    border-radius: 5px;
+    border-width: 2.5px;
+    border-radius: 2px;
     border-color: teal;
 }
 .qualities {
     border-style: solid;
-    border-radius: 5px;
-    border-color: aquamarine;
+    border-width: 2.5px;
+    border-radius: 2px;
+    border-color: #1a54d1;
 }
 .hobbies-interests {
     border-style: solid;
-    border-radius: 5px;
-    border-color: coral;
+    border-width: 2.5px;
+    border-radius: 2px;
+    border-color: #242038;
 }
 #about-me:hover { box-shadow: 3.75px 6px teal; }
-.qualities:hover { box-shadow: 3.75px 6px aquamarine; }
-.hobbies-interests:hover { box-shadow: 3.75px 6px coral; }
+.qualities:hover { box-shadow: 3.75px 6px #1a54d1; }
+.hobbies-interests:hover { box-shadow: 3.75px 6px #242038; }
 
+
+/*  Hover features for boxes */
+#about-me h3 {
+    background-color: rgb(219, 218, 218);
+    text-align: center;
+    padding: 5px;
+}
+#about-me h3:hover {
+    color: white;
+    background-color: teal;
+    font-size: 23px;
+}
+.qualities h3 {
+    background-color: rgb(219, 218, 218);
+    text-align: center;
+    padding: 5px;
+}
+.qualities h3:hover {
+    color: white;
+    background-color: #1a54d1;
+    font-size: 23px;    
+}
+.hobbies-interests h3 {
+    background-color: rgb(219, 218, 218);
+    text-align: center;
+    padding: 5px;
+}
+.hobbies-interests h3:hover {
+    color: white;
+    background-color: #242038;
+    font-size: 23px;
+}
+
+
+/* Picture stylings */
 .circle-pic {
     display: inline-block;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
+    margin: 5px 30px 5px 30px;
 }
-
 .profile-pic { max-width: 100%; }
-
 .pcPicture {
-    height: 250px;
-    width: 375px;
+    height: 337px;
+    width: 450px;
 }
-
 .poolPicture {
     height: 300px;
     width: 450px;
 }
 
-#about-me h3 {
-    background-color: coral;
-    text-align: center;
-    padding: 5px;
-}
 
-#about-me > p { color: teal; }
-
-#about-me > div > p { color: indigo; }
-
+/* Bottom of page & EXTRAS */
 #box:checked { box-shadow: 0 0 0 3px green; }
 
-#box:checked + label { color: green; }
+#box:checked + label { color: green; }    
 
-#about-me > h3:hover {
+footer {
+    background-color: #242038;
     color: white;
-    background-color: teal;
-    text-align: center;
-    font-size: 23px;
 }
-
-#socials button:hover { box-shadow: 2.5px 4px; }
-
-.contact:visited { color: blue; }
-
-.projects:active { color: crimson; }
-
-a[data-anchor="sport"] { color: red; }
+footer a {
+    color: #D8D8F6;
+}
