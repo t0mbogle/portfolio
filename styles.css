@@ -1,67 +1,97 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rajdhani', sans-serif;
 }
+
+
+/* Top Of Page Flex-boxes */
+.top-of-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navbar {
+    display: flex;
+    justify-content: end;
+    padding: 15px 0px 15px 0px;
+    background-color: #242038;
+    background-color: #242038;
+}
+.navbar a { padding: 0px 25px 0px 25px; }
+.navbar a:last-of-type { margin-right: 15px; }
+
+
 
 /* Experimenting with navbar links */
 .navbar > a { 
     text-decoration: none;
     font-size: 20px;
     margin: 0px 5px 0px 5px;
-    color: #242038;
+    color: white;
 }
 
-header {
-    background-color: #D8D8F6;
-}
-
+/* Geneal Header Specifics (for whole page) */
+header { background-color: #D8D8F6; }
 h1 { 
-    font-size: 40px;
+    font-size: 40px; 
+    margin-left: 20px;
 }
-h2 { font-weight: normal; }
+h2 { 
+    font-size: 19px;
+    font-weight: normal;
+    margin-right: 20px; 
+}
 h3 {
     font-weight: normal;
     text-decoration: underline;
+    font-size: 30px;
 }
 
+/* Borders to visualize layout better!! */
+.about-me-text {
+    border: solid;
+    border-width: 10px;
+    max-width: 50%;
+    display: inline-block;
+}
 
-/* Experimenting with paragraph font styling */
-#about-me p {
-    letter-spacing: 1px;
-    word-spacing: 3px;
+/* Experimenting with flex to arrange box content */
+.about-me {
+    overflow: hidden;
+}
+.circle-pic {
+    position: relative;
+    float: right;
 }
 
 
 /* Three main boxes on homepage */
-#about-me {
+.about-me {
     border-style: solid;
     border-width: 2.5px;
-    border-radius: 2px;
     border-color: teal;
 }
 .qualities {
     border-style: solid;
     border-width: 2.5px;
-    border-radius: 2px;
     border-color: #1a54d1;
 }
 .hobbies-interests {
     border-style: solid;
     border-width: 2.5px;
-    border-radius: 2px;
     border-color: #242038;
 }
-#about-me:hover { box-shadow: 3.75px 6px teal; }
-.qualities:hover { box-shadow: 3.75px 6px #1a54d1; }
-.hobbies-interests:hover { box-shadow: 3.75px 6px #242038; }
+.about-me:hover { box-shadow: 3.75px 6px rgb(1, 112, 112); }
+.qualities:hover { box-shadow: 3.75px 6px #1648b4; }
+.hobbies-interests:hover { box-shadow: 3.75px 6px #09080e; }
 
 
 /*  Hover features for boxes */
-#about-me h3 {
+.about-me h3 {
     background-color: rgb(219, 218, 218);
     text-align: center;
     padding: 5px;
 }
-#about-me h3:hover {
+.about-me h3:hover {
     color: white;
     background-color: teal;
     font-size: 23px;
@@ -95,9 +125,11 @@ h3 {
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 5px 30px 5px 30px;
+    margin: 5px 30px 15px 30px;
 }
-.profile-pic { max-width: 100%; }
+.profile-pic { 
+    max-width: 100%;
+}
 .pcPicture {
     height: 337px;
     width: 450px;
@@ -108,11 +140,70 @@ h3 {
 }
 
 
+
+
+/* Projects Section */
+.project-title {
+    text-align: center;
+    text-decoration: none;
+}
+.proflex {
+    display: flex;
+    justify-content: center;
+}
+.project {
+    color: white;
+    font-size: 1.25em;
+    border: 2px solid #242038;
+    border-radius: 10px;
+    width: 25%;
+    height: 200px;
+    margin: 20px;
+}
+.project-1 { background-color: teal; }
+.project-2 { background-color: teal; }
+.project-3 { background-color: teal; }
+.project h4 {
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+/* Contact Section */
+.contact-title {
+    text-align: center;
+    text-decoration: none;
+}
+.name-email {
+    display: flex;
+    justify-content: center;
+}
+.ne {
+    margin: 10px 30px 10px 30px;
+    font-size: 20px;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 10px;
+    font-size: 50px;
+    line-height: 15px;
+}
+
+
+
+
+
 /* Bottom of page & EXTRAS */
-#box:checked { box-shadow: 0 0 0 3px green; }
-
-#box:checked + label { color: green; }    
-
+.languages {
+    text-align: center;
+}
 footer {
     background-color: #242038;
     color: white;

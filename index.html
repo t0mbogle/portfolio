@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tom Bogle</title>
 </head>
 <body>
     <header>
-    <h1>Tom Bogle</h1>
-    <h2>Junior developer studying part-time at Manchester Codes</h2>
+    <div class="top-of-page">
+        <h1>Tom Bogle</h1>
+        <h2>- Junior developer studying at Manchester Codes</h2>
+    </div>
     <nav class="navbar">
-        <a href="/Users/tombogle/Projects/portfolio/pages/projects.html" class="projects" target="_blank">Projects</a>
-        <a href="/Users/tombogle/Projects/portfolio/pages/contact.html" class="contact" target="_blank">Contact</a>
+        <a href="#project-anchor" class="projects">Projects</a>
+        <a href="#bottom" class="contact">Contact</a>
     </nav>
     </header>
     <main>
@@ -18,14 +22,16 @@
 <hr>
 <br>
 
-<div id="about-me">
+<div class="about-me">
     <h3>About Me</h3>
-        <div class="circle-pic">
-        <img class="profile-pic" src="/Users/tombogle/Projects/portfolio/images/image_6483441 16.21.56.JPG" alt="A picture of me">
-        </div>
-    <p>I am a friendly and creative individual looking forward to jumping into the tech world and seeing what is has to offer!</p>
-    <p>I first got into code via a mobile app called Mimo, which initially triggered my interest. 
+    <div class="about-me-text">
+        <p>I am a friendly and creative individual looking forward to jumping into the tech world and seeing what is has to offer!</p>
+        <p>I first got into code via a mobile app called Mimo, which initially triggered my interest. 
         I enjoy problem solving and like a challenge, this is keeping me motivated to continue with it and up-skill :)</p>
+    </div>
+    <div class="circle-pic">
+        <img class="profile-pic" src="/Users/tombogle/Projects/portfolio/images/image_6483441 16.21.56.JPG" alt="A picture of me">
+    </div>
 </div>
 
 <br>
@@ -67,21 +73,61 @@
     </figure>
 
 </div>
+<br>
+<hr id="project-anchor">
+<br>
+
+<div>
+    <h3 class="project-title">Projects</h3>
+    <div class="proflex">
+        <div class="project project-1"><h4>Project 1</h4></div>
+        <div class="project project-2"><h4>Project 2</h4></div>
+        <div class="project project-3"><h4>Project 3</h4></div>
+    </div>
+</div>
 
 <br>
 <hr>
 <br>
+
+    <h3 class="contact-title">Get in touch</h3>
+    <form action="" class="form">
+        <div class="name-email">
+            <div class="ne name-email-1">
+            <label>
+                Name:
+                <br>
+                <input type="text" name="name">
+            </label>
+            </div>
+            <div class="ne name-email-2">
+            <label>
+                Email:
+                <br>
+                <input type="email" name="email">
+            </label>
+            </div>
+        </div>
+        <div class="message">
+            <label>
+                Message:
+                <br>
+                <textarea name="comments" placeholder="Enter your comments..." cols="60" rows="4"></textarea>
+            </label>
+        </div>
+        <div class="submit">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>
+
     </main>
     <footer>
-        <div id="socials">
+        <p class="languages">Languages I am familiar with...</p>
+        <div id="bottom" class="socials">
             <h3>My Socials</h3>
-                <p>Follow me on <a href="">Instagram</a></p>
-                <p>Follow me on <a href="">LinkedIn</a></p>
-                <p>Check out my <a href="">Github</a></p>
-                <!-- The below are form elements, we will get to those later on so don't worry about these just yet, we just need them for demo purposes -->
-                <input type="checkbox" id="box" name="test-checkbox" checked>
-                <label for="test-checkbox">Check this box for some reason</label>
-                <!-- The button below is just a demo, so it doesn't do anything, we will add the disabled attribute though, more on that below... -->
+                <p>Follow me on <a href="">Instagram</a> <a href="#" class="fa fa-instagram"></a> </p>
+                <p>Follow me on <a href="">LinkedIn</a> <a href="#" class="fa fa-linkedin"></a> </p>
+                <p>Check out my <a href="">Github</a> <a href="#" class="fa fa-github"></a> </p>
                 <button disabled>You can't press this...</button>
         </div>
         2022 - Tom Bogle
