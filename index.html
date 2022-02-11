@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/20f8149097.js" crossorigin="anonymous"></script>
     <title>Tom Bogle</title>
 </head>
 <body>
@@ -24,13 +25,16 @@
 
 <div class="about-me">
     <h3>About Me</h3>
-    <div class="about-me-text">
-        <p>I am a friendly and creative individual looking forward to jumping into the tech world and seeing what is has to offer!</p>
-        <p>I first got into code via a mobile app called Mimo, which initially triggered my interest. 
-        I enjoy problem solving and like a challenge, this is keeping me motivated to continue with it and up-skill :)</p>
-    </div>
-    <div class="circle-pic">
-        <img class="profile-pic" src="/Users/tombogle/Projects/portfolio/images/image_6483441 16.21.56.JPG" alt="A picture of me">
+    <div class="about-me-content">
+        <div class="about-me-text">
+            <p>I first got into coding through an app called Mimo, which initially triggered my interest 
+                and have self-tought knowledge of HTML, CSS and JavaScript ~3 months prior to studying at Manchester Codes. 
+                I enjoy problem solving and like a challenge, this is keeping me motivated to continue learning and up-skill.</p>
+            <p>I am a friendly and creative individual looking forward to jumping into the tech world and seeing what is has to offer!</p>
+        </div>
+        <div class="circle-pic">
+            <img class="profile-pic" src="/Users/tombogle/Projects/portfolio/images/image_6483441 16.21.56.JPG" alt="A picture of me">
+        </div>
     </div>
 </div>
 
@@ -39,18 +43,17 @@
 <div class="qualities">  
 
     <h3>Qualities</h3>
-    <ol>
-        <li>Problem solving</li>
-        <li>Creative thinking</li>
-        <li>Practical</li>
-    </ol>
-    <figure>
-        <img src="/Users/tombogle/Projects/portfolio/images/IMG_0742.jpg" class="pcPicture" alt="Picture of a constructed Computer">
-        <br>
-        <figcaption>
-            I take pride in practical tasks and during lockdown I built myself a Desktop computer.
-        </figcaption>
-    </figure>
+        <div class="qualities-content">
+            <div class="qualities-text">
+                <p> My best qualities include problem solving, creative thinking and working well as part of a team. 
+                    I take pride in practical tasks and during lockdown I built myself a desktop computer. </p>
+            </div>
+            <div>
+                <figure>
+                    <img src="/Users/tombogle/Projects/portfolio/images/IMG_0742.jpg" class="pcPicture" alt="Picture of a constructed Computer">
+                </figure>
+            </div>
+        </div>
 
 </div>
 
@@ -59,20 +62,21 @@
 <div class="hobbies-interests">
 
     <h3>Hobbies and Interests</h3>
-    <ul>
-        <li>Pub & Card Games</li>
-        <li>Astronomy</li>
-        <li>Ancient Mythology</li>
-    </ul>
-    <figure>
-        <img src="/Users/tombogle/Projects/portfolio/images/klara-kulikova-DUcVepObkXk-unsplash.jpg" class="poolPicture" alt="Picture of a pool table">
-        <br>
-        <figcaption>
-            I enjoy taking part in pub quizzes/pub games with mates at the weekend.
-        </figcaption>
-    </figure>
+    <div class="hob-int-content">
+        <div class="hob-int-text">
+            <p> Some of my hobbies and interests include being active, watching and playing football, socialising and playing poker or other pub games with friends at the weekend.</p>
+        </div>
+        <div>
+            <figure>
+                <img src="/Users/tombogle/Projects/portfolio/images/klara-kulikova-DUcVepObkXk-unsplash.jpg" class="poolPicture" alt="Picture of a pool table">
+            </figure>
+        </div>
+    </div>
 
 </div>
+
+
+
 <br>
 <hr id="project-anchor">
 <br>
@@ -86,6 +90,22 @@
     </div>
 </div>
 
+<br>
+<hr>
+<br>
+
+    <div>
+        <div class="langauge-title">
+            <h2>Experience using;</h2>
+        </div>
+        <div class="langauge-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+        </div>
+    </div>
+    
+<br>
 <br>
 <hr>
 <br>
@@ -112,7 +132,7 @@
             <label>
                 Message:
                 <br>
-                <textarea name="comments" placeholder="Enter your comments..." cols="60" rows="4"></textarea>
+                <textarea name="comments" placeholder="Enter your comments..." cols="53" rows="4"></textarea>
             </label>
         </div>
         <div class="submit">
@@ -122,15 +142,20 @@
 
     </main>
     <footer>
-        <p class="languages">Languages I am familiar with...</p>
         <div id="bottom" class="socials">
-            <h3>My Socials</h3>
-                <p>Follow me on <a href="">Instagram</a> <a href="#" class="fa fa-instagram"></a> </p>
-                <p>Follow me on <a href="">LinkedIn</a> <a href="#" class="fa fa-linkedin"></a> </p>
-                <p>Check out my <a href="">Github</a> <a href="#" class="fa fa-github"></a> </p>
-                <button disabled>You can't press this...</button>
+            <div class="top-of-footer">
+                <h3>Other links</h3>
+                <a href="#top"> <i class="fa-solid fa-angle-up"></i>  </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/t0mbogle" target="_blank" class="fa fa-github"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
         </div>
-        2022 - Tom Bogle
+        <div class="bottom-of-footer">
+            <p>2022</p> <p>- Tom Bogle</p>
+        </div>
     </footer>
 </body>
 </html> 
