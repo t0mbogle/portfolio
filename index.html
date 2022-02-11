@@ -1,53 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/20f8149097.js" crossorigin="anonymous"></script>
     <title>Tom Bogle</title>
 </head>
 <body>
     <header>
-<h1>Tom Bogle</h1>
-<h2>Junior developer studying part-time at Manchester Codes</h2>
-<nav>
-    <a href="/Users/tombogle/Projects/portfolio/pages/projects.html" target="_blank">Projects</a>
-    <a href="/Users/tombogle/Projects/portfolio/pages/contact.html" target="_blank">Contact</a>
-    <img src="/Users/tombogle/Projects/portfolio/images/image_6483441 16.21.56.JPG 16.21.56.JPG" alt="Picture of myself">
-</nav>
+    <div class="top-of-page">
+        <h1>Tom Bogle</h1>
+        <h2>- Junior developer studying at Manchester Codes</h2>
+    </div>
+    <nav class="navbar">
+        <a href="#project-anchor" class="projects">Projects</a>
+        <a href="#bottom" class="contact">Contact</a>
+    </nav>
     </header>
     <main>
 <br>
 <hr>
-<h3>About Me</h3>
-<p>I am a creative individual looking forward to jumping into the tech world and seeing what is has to offer!</p>
-<p>I first got into code via my sister who thought it was something that would interest me. 
-    I enjoy problem solving and like the challenge which is keeping me motivated to continue with it and up-skill :)</p>
-    <figure>
-        <img src="/Users/tombogle/Projects/portfolio/images/onur-binay-P3PpD5k7jfI-unsplash.jpg" alt="Picture of a constructed Computer">
-        <br>
-        <figcaption>
-            I enjoy practical challenges and during lockdown I built myself a Desktop computer.
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="/Users/tombogle/Projects/portfolio/images/klara-kulikova-DUcVepObkXk-unsplash.jpg" alt="Picture of a pool table">
-        <br>
-        <figcaption>
-            I love joining in pub quizzes and playing pub games with mates at the weekend.
-        </figcaption>
-    </figure>
+<br>
+
+<div class="about-me">
+    <h3>About Me</h3>
+    <div class="about-me-content">
+        <div class="about-me-text">
+            <p>I first got into coding through an app called Mimo, which initially triggered my interest 
+                and have self-tought knowledge of HTML, CSS and JavaScript ~3 months prior to studying at Manchester Codes. 
+                I enjoy problem solving and like a challenge, this is keeping me motivated to continue learning and up-skill.</p>
+            <p>I am a friendly and creative individual looking forward to jumping into the tech world and seeing what is has to offer!</p>
+        </div>
+        <div class="circle-pic">
+            <img class="profile-pic" src="/Users/tombogle/Projects/portfolio/images/image_6483441 16.21.56.JPG" alt="A picture of me">
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="qualities">  
+
+    <h3>Qualities</h3>
+        <div class="qualities-content">
+            <div class="qualities-text">
+                <p> My best qualities include problem solving, creative thinking and working well as part of a team. 
+                    I take pride in practical tasks and during lockdown I built myself a desktop computer. </p>
+            </div>
+            <div>
+                <figure>
+                    <img src="/Users/tombogle/Projects/portfolio/images/IMG_0742.jpg" class="pcPicture" alt="Picture of a constructed Computer">
+                </figure>
+            </div>
+        </div>
+
+</div>
+
+<br>
+
+<div class="hobbies-interests">
+
+    <h3>Hobbies and Interests</h3>
+    <div class="hob-int-content">
+        <div class="hob-int-text">
+            <p> Some of my hobbies and interests include being active, watching and playing football, socialising and playing poker or other pub games with friends at the weekend.</p>
+        </div>
+        <div>
+            <figure>
+                <img src="/Users/tombogle/Projects/portfolio/images/klara-kulikova-DUcVepObkXk-unsplash.jpg" class="poolPicture" alt="Picture of a pool table">
+            </figure>
+        </div>
+    </div>
+
+</div>
+
+
+
+<br>
+<hr id="project-anchor">
+<br>
+
+<div>
+    <h3 class="project-title">Projects</h3>
+    <div class="proflex">
+        <div class="project project-1"><h4>Project 1</h4></div>
+        <div class="project project-2"><h4>Project 2</h4></div>
+        <div class="project project-3"><h4>Project 3</h4></div>
+    </div>
+</div>
+
+<br>
 <hr>
-<h3>Qualities</h3>
-<ol>
-    <li>Problem solving</li>
-    <li>Creative thinking</li>
-    <li>Practical</li>
-</ol>
-<h3>Hobbies and Interests</h3>
-<ul>
-    <li>Pub & Card Games</li>
-    <li>Astronomy</li>
-    <li>Ancient Mythology</li>
-</ul>
+<br>
+
+    <div>
+        <div class="langauge-title">
+            <h2>Experience using;</h2>
+        </div>
+        <div class="langauge-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+        </div>
+    </div>
+    
+<br>
+<br>
+<hr>
+<br>
+
+    <h3 class="contact-title">Get in touch</h3>
+    <form action="" class="form">
+        <div class="name-email">
+            <div class="ne name-email-1">
+            <label>
+                Name:
+                <br>
+                <input type="text" name="name">
+            </label>
+            </div>
+            <div class="ne name-email-2">
+            <label>
+                Email:
+                <br>
+                <input type="email" name="email">
+            </label>
+            </div>
+        </div>
+        <div class="message">
+            <label>
+                Message:
+                <br>
+                <textarea name="comments" placeholder="Enter your comments..." cols="53" rows="4"></textarea>
+            </label>
+        </div>
+        <div class="submit">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>
+
     </main>
-    <footer>2022 - Tom Bogle</footer>
+    <footer>
+        <div id="bottom" class="socials">
+            <div class="top-of-footer">
+                <h3>Other links</h3>
+                <a href="#top"> <i class="fa-solid fa-angle-up"></i>  </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/t0mbogle" target="_blank" class="fa fa-github"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+        <div class="bottom-of-footer">
+            <p>2022</p> <p>- Tom Bogle</p>
+        </div>
+    </footer>
 </body>
 </html> 
