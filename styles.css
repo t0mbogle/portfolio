@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-/* Top Of Page Flex-boxes */
+/* Top Of Page and navbar */
 .top-of-page {
     display: flex;
     justify-content: space-between;
@@ -19,9 +19,6 @@
 }
 .navbar a { padding: 0px 25px 0px 25px; }
 .navbar a:last-of-type { margin-right: 15px; }
-
-
-/* Experimenting with navbar links */
 .navbar > a { 
     text-decoration: none;
     font-size: 20px;
@@ -44,7 +41,30 @@ h2 {
 h3 {
     font-weight: normal;
     text-decoration: underline;
-    font-size: 30px;
+    font-size: 23px;
+}
+
+
+
+/* Make external 'about-me' container a grid potentially? so it scales with screen size */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "left about-me right"
+        "left qualities right"
+        "left hobbies-interests right";
+}
+.about-me {
+    grid-area: about-me;
+}
+.qualities {
+    grid-area: qualities;
+}
+.hobbies-interests {
+    grid-area: hobbies-interests;
 }
 
 
@@ -52,7 +72,7 @@ h3 {
 
 
 
-/* About me flex container     -      Make external 'about-me' container a grid potentially? so it scales with screen size */
+/* About me flex container */
 .about-me-content {
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +81,7 @@ h3 {
 }
 .about-me-text {
     max-width: 80%;
+    padding: 20px;
 }
 
 /* Picture stylings */
@@ -86,11 +107,13 @@ h3 {
 }
 .qualities-text {
     max-width: 80%;
+    padding: 20px;
 }
 .pcPicture {
     height: 252.75px;
     width: 337.5px;
     border-radius: 10px 0px 25% 0px;
+    margin: 20px 20px 20px 20px;
 }
 
 
@@ -102,11 +125,13 @@ h3 {
 }
 .hob-int-text {
     max-width: 80%;
+    padding: 20px;
 }
 .poolPicture {
     height: 240px;
     width: 320px;
     border-radius: 0px 10px 0px 25%;
+    margin: 20px 20px 20px 20px;
 }
 
 
@@ -121,16 +146,16 @@ h3 {
 .qualities {
     border-style: solid;
     border-width: 2.5px;
-    border-color: #1a54d1;
+    border-color: #242038;
 }
 .hobbies-interests {
     border-style: solid;
     border-width: 2.5px;
-    border-color: #242038;
+    border-color: teal;
 }
 .about-me:hover { box-shadow: 3.75px 6px rgb(1, 112, 112); }
-.qualities:hover { box-shadow: 3.75px 6px #1648b4; }
-.hobbies-interests:hover { box-shadow: 3.75px 6px #09080e; }
+.qualities:hover { box-shadow: 3.75px 6px #09080e; }
+.hobbies-interests:hover { box-shadow: 3.75px 6px rgb(1, 112, 112); }
 
 
 /*  Hover features for boxes */
@@ -142,7 +167,7 @@ h3 {
 .about-me h3:hover {
     color: white;
     background-color: teal;
-    font-size: 23px;
+    font-size: 30px;
 }
 .qualities h3 {
     background-color: rgb(219, 218, 218);
@@ -151,8 +176,8 @@ h3 {
 }
 .qualities h3:hover {
     color: white;
-    background-color: #1a54d1;
-    font-size: 23px;    
+    background-color: #242038;
+    font-size: 30px;    
 }
 .hobbies-interests h3 {
     background-color: rgb(219, 218, 218);
@@ -161,9 +186,15 @@ h3 {
 }
 .hobbies-interests h3:hover {
     color: white;
-    background-color: #242038;
-    font-size: 23px;
+    background-color: teal;
+    font-size: 30px;
 }
+
+
+
+
+
+
 
 
 /* Projects Section */
@@ -350,6 +381,9 @@ footer .fa-envelope {
     }
     .hob-int-text {
         order: 1;
+    }
+    .main-grid {
+        grid-template-rows: 0.6fr 0.6fr 0.6fr;
     }
   
 }
