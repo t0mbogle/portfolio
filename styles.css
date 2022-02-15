@@ -13,18 +13,25 @@
 .navbar {
     display: flex;
     justify-content: end;
-    padding: 15px 0px 15px 0px;
     background-color: #242038;
     background-color: #242038;
+    height: 50px;
 }
-.navbar a { padding: 0px 25px 0px 25px; }
-.navbar a:last-of-type { margin-right: 15px; }
-.navbar > a { 
+.navbar a { 
     text-decoration: none;
     font-size: 20px;
-    margin: 0px 5px 0px 5px;
     color: #D8D8F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
 }
+.navbar a:hover {
+    color: #242038;
+    background-color: #D8D8F6;
+    border: solid 1px #242038;
+}
+.navbar a:last-of-type { margin-right: 20px; }
 
 
 /* Geneal Header Specifics (for whole page) */
@@ -50,7 +57,7 @@ h3 {
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 0.8fr;
     grid-gap: 10px;
     grid-template-areas: 
         "left about-me right"
@@ -386,4 +393,10 @@ footer .fa-envelope {
         grid-template-rows: 0.6fr 0.6fr 0.6fr;
     }
   
+}
+
+@media screen and (min-width: 1024px) {
+    p {
+        font-size: 20px;
+    }
 }
